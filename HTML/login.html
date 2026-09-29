@@ -7,25 +7,42 @@
     <link href="../CSS/bootstrap.min.css" rel="stylesheet">
   </head>
 
-  <body class="d-flex align-items-center py-4 bg-body-tertiary">
-    <main class="container form-signin w-100 auto">
-      <form>
-        <div class="mb-3">
-          <label for="exampleInputEmail1" class="form-label">Email address</label>
-          <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
-          <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+  <body class="bg-dark">
+    <div class="container min-vh-100 d-flex align-items-center justify-content-center">
+        <div class="row w-100 justify-content-center">
+          <div class="col-12 col-md-8 col-lg-5 col-xl-4">
+              <div class="Card border-0 shadow-lg rounded-4">
+                <div class="card-body p-4 p-md-5">
+                  <div class="text-center mb-4">
+                    <h2 class="fw-bold">Bem Vindo(a)!</h2>
+                    <p class="text-secondary">Entre com sua conta para continuar</p>
+                  </div>
+                  <div class="text-center mb-4">
+                      <form>
+                          <div class="mb-3">
+                              <label class="form-label fw-semibold">Email</label>
+                              <input type="email" class="form-control form-control-lg" placeholder="exemplo@gmail.com"/>
+                          </div>
+                          <div class="mb-3">
+                              <div class="d-flex justify-content-between">
+                                  <label class="form-label fw-semibold">Senha</label>
+                                  <a href="#">Esqueceu a senha?</a>
+                              </div>
+                               <input type="password" class="form-control" placeholder="Digite sua senha"/>
+                          </div>
+                          <div class="form-check mb-4">
+                              <input type="checkbox" class="form-check-input" id="lembrar"/>
+                              <label for="lembrar" class="form-check-label">lembrar mais tarde</label>
+                          </div>
+                          <button type="submit" class="btn btn-primary btn-lg w-100">Entrar</button>
+                      </form>
+                  </div>
+                </div>
+              </div>
+              <p class="text-center text-white-50 small mt-4">Programacção Dinâmica para Web</p>
+          </div>
         </div>
-        <div class="mb-3">
-          <label for="exampleInputPassword1" class="form-label">Password</label>
-          <input type="password" class="form-control" id="exampleInputPassword1">
-        </div>
-        <div class="mb-3 form-check">
-          <input type="checkbox" class="form-check-input" id="exampleCheck1">
-          <label class="form-check-label" for="exampleCheck1">Check me out</label>
-        </div>
-        <button type="submit" class="btn btn-primary">Submit</button>
-      </form>
-    </main>
+    </div>
     <script src="../JS/bootstrap.bundle.min.js"></script>
   </body>
 </html>
